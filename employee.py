@@ -2,6 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee():
+
     def __init__(self, name):
         self.name = name
         
@@ -36,9 +37,9 @@ class Employee():
         pay = 0
 
         if self.contract_type == 'salary':
-            pay += self.contract_pay
+            pay = self.contract_pay
         elif self.contract_type == 'hourly':
-            pay += (self.contract_pay*self.hours)
+            pay = (self.contract_pay*self.hours)
 
         if self.commision_type == 'bonus':
             pay += self.commision_pay
